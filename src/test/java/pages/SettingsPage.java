@@ -18,7 +18,7 @@ public class SettingsPage extends Page {
 		getDriver().get(URL);
 	}
 
-	@FindBy(xpath = "//b[contains(text(),\"Личные данные\")]")
+	@FindBy(xpath = "//b[contains(text(),\"Р›РёС‡РЅС‹Рµ РґР°РЅРЅС‹Рµ\")]")
 	private WebElement dataF;
 
 	@FindBy(xpath = "//input[@name =\"personalForm.name\"]")
@@ -48,7 +48,7 @@ public class SettingsPage extends Page {
 	@FindBy(xpath = "//textarea[@name =\"personalForm.about\"]")
 	private WebElement elementAboutMe;
 
-	@FindBy(xpath = "//b[contains(text(),\"Уведомления\")]")
+	@FindBy(xpath = "//b[contains(text(),\"Г“ГўГҐГ¤Г®Г¬Г«ГҐГ­ГЁГї\")]")
 	private WebElement elementNotice;
 
 	@FindBy(xpath = "//label[@class ='notifications']")
@@ -60,10 +60,10 @@ public class SettingsPage extends Page {
 	@FindBy(xpath = "//input[@name =\"notificationsForm.save\"]")
 	private WebElement elementSaiv;
 
-	@FindBy(xpath = "//b[contains(text(),\"Конфиденциальность\")]")
+	@FindBy(xpath = "//b[contains(text(),\"ГЉГ®Г­ГґГЁГ¤ГҐГ­Г¶ГЁГ Г«ГјГ­Г®Г±ГІГј\")]")
 	private WebElement elementCon;
 
-	@FindBy(xpath = "//input[contains(text(),\"Только я\")]")
+	@FindBy(xpath = "//input[contains(text(),\"Г’Г®Г«ГјГЄГ® Гї\")]")
 	private WebElement elementConJastMe;
 
 	@FindBy(xpath = "//input[@name =\"privacyForm.save\"]")
@@ -77,9 +77,9 @@ public class SettingsPage extends Page {
 	private final String dateB = "2017";
 	private final String site = "Epam.by";
 	private final String campany = "EPAM";
-	private final String cantry = "Беларусь";
-	private final String city = "Минск";
-	private final String poyas = "Белоруссия/Минск(GMT+3)";
+	private final String cantry = "ГЃГҐГ«Г Г°ГіГ±Гј";
+	private final String city = "ГЊГЁГ­Г±ГЄ";
+	private final String poyas = "ГЃГҐГ«Г®Г°ГіГ±Г±ГЁГї/ГЊГЁГ­Г±ГЄ(GMT+3)";
 	private final String me = "I'm hard working person = ))";
 
 	public void dataFClicfk() {
@@ -107,11 +107,11 @@ public class SettingsPage extends Page {
 		dataF.click();
 		elementChooseAv.click();
 
-		driver.get("file://D:/дрозд.jpg");
+		driver.get("file://D:/Г¤Г°Г®Г§Г¤.jpg");
 
 		WebElement fileInput = driver.findElement(By.id("file"));
 
-		fileInput.sendKeys("file://D:/дрозд.jpg");
+		fileInput.sendKeys("file://D:/Г¤Г°Г®Г§Г¤.jpg");
 
 	}
 
