@@ -14,7 +14,7 @@ public class MainPage extends Page {
 
 	}
 
-	@FindBy(xpath = "//a[contains(text(),\"войти\")]")
+	@FindBy(xpath = "//a[contains(text(),\"РІРѕР№С‚Рё\")]")
 	private WebElement enter;
 
 	@FindBy(xpath = "//input[@id =\"login\"]")
