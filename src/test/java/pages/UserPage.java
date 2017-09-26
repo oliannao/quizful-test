@@ -16,7 +16,7 @@ public class UserPage extends Page {
 		getDriver().get(URL);
 	}
 
-	@FindBy(xpath = "//a[contains(text(),\"редактировать\")]")
+	@FindBy(xpath = "//a[contains(text(),\"СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ\")]")
 	private WebElement red;
 
 	public SettingsPage findRed() {
