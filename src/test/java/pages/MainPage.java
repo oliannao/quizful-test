@@ -42,7 +42,6 @@ public class MainPage extends Page {
 	}
 
 	public UserPage enterLoginPassword() {
-		// PageFactory.initElements(driver, this);
 		login.sendKeys(logins);
 		password.sendKeys(passwords);
 		ok.click();
