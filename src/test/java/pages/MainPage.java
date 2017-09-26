@@ -30,7 +30,7 @@ public class MainPage extends Page {
 	private WebElement user;
 
 	private final String logins = "oliannao";
-	private final String passwords = "galina2010";
+	private final String passwords = "**********";
 
 	public void open() {
 		getDriver().get(URL);
