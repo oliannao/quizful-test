@@ -29,7 +29,7 @@ public class QuizfulNetTest {
 		mainPage = new MainPage(driver);
 		mainPage.open();
 		System.out.println(driver.getTitle());
-		// Assert.assertEquals("Mail.Ru: почта, поиск в интернете, новости, игры",
+		
 
 	}
 
