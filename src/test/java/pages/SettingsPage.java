@@ -148,12 +148,9 @@ public class SettingsPage extends Page {
     public void avatarClick(UserPage userPage)throws InterruptedException{
         Thread.sleep(2000);
         dataF.click();
-        WebDriverWait wait = new WebDriverWait(driver, 300);
-        WebElement elementAv= wait.until(ExpectedConditions
-                .visibilityOfElementLocated(By.xpath("//input[@name =\"personalForm.save\"]")));
-      //  driver.get("file://D:/Разное/forCV.png");
-       elementAv.sendKeys("file://D:/Разное/Osa.jpg");
-        Thread.sleep(3000);
+        File file = new File("C:\\Osa.jpg");
+        elementChooseAv.sendKeys(file.getAbsolutePath());
+        Thread.sleep(5000);
         saiv.click();
         userPage.findRed();
     }
