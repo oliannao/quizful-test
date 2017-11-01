@@ -20,7 +20,7 @@ public class UserPage extends Page {
 	private WebElement red;
 
 	public SettingsPage findRed() {
-		PageFactory.initElements(driver, this);
+		
 		red.click();
 		return new SettingsPage(driver);
 	}
