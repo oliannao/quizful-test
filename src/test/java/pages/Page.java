@@ -9,6 +9,7 @@ public abstract class Page
     public Page(WebDriver driver)
     {
         this.driver = driver;
+         PageFactory.initElements(driver, this);
     }
 
     public WebDriver getDriver()
