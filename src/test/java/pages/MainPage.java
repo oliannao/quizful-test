@@ -37,7 +37,7 @@ public class MainPage extends Page {
 	}
 
 	public void findEnterClicfk() {
-		PageFactory.initElements(driver, this);
+		
 		enter.click();
 	}
 
