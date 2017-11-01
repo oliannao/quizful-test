@@ -88,7 +88,6 @@ public class SettingsPage extends Page {
     private final String me = "I'm hard working person = ))";
 
     public void dataFClick() throws InterruptedException {
-        PageFactory.initElements(driver, this);
         Thread.sleep(5000);
         dataF.click();
         personalFormF.clear();
