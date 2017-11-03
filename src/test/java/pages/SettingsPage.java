@@ -22,20 +22,26 @@ public class SettingsPage extends Page {
 
     @FindBy(xpath = "//b[contains(text(),\"Личные данные\")]")
     private WebElement dataF;
-
+    
     @FindBy(xpath = "//input[@name =\"personalForm.name\"]")
+    @CacheLookup   //  найдя элемент в первый раз, driver кэширует его и в будущем уже использует
+    //кэшированный объект, что даёт небольшой прирост в скорости тестов;
     private WebElement personalFormF;
-
+    
     @FindBy(xpath = "//input[@name =\"personalForm.surname\"]")
+    @CacheLookup
     private WebElement personalFormL;
 
     @FindBy(xpath = "//input[@name =\"personalForm.birthyear\"]")
+    @CacheLookup
     private WebElement personalFormB;
 
     @FindBy(xpath = "//input[@name =\"personalForm.site\"]")
+    @CacheLookup
     private WebElement personalSite;
 
     @FindBy(xpath = "//input[@name =\"personalForm.company\"]")
+    @CacheLookup
     private WebElement personalCamp;
 
     @FindBy(xpath = "//select[@name =\"personalForm.countryId\"]")
