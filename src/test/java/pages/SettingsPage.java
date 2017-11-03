@@ -85,7 +85,7 @@ public class SettingsPage extends Page {
 
     private final String nameF = "Anna";
     private final String nameL = "Osadchaya";
-    private final String dateB = "2017";
+    private final String dateB = "1980";
     private final String site = "Epam.by";
     private final String campany = "EPAM";
     private final String cantry = "Беларусь";
